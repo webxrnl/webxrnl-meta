@@ -7,3 +7,5 @@ import 'aframe/src'
  * require below all external aframe components
  * not your app modules
  */
+import 'aframe-alongpath-component'
+import 'aframe-curve-component'

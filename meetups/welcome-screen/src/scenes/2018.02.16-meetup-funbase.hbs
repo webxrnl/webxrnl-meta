@@ -1,5 +1,54 @@
 {{> aframe/header}}
 <a-scene>
+  <a-assets>
+    <img id="arLogo" src="assets/static/images/ar-icon-black.png" alt="">
+    <img id="vrLogo" src="assets/static/images/vr.png" alt="">
+    <img id="mrLogo" src="assets/static/images/mr.png" alt="">
+    <img id="wwLogo" src="assets/static/images/www.png" alt="">
+    <!-- <a-asset-item id="marvin-obj" src="./objects/marvin.obj"></a-asset-item>
+    <a-asset-item id="marvin-mtl" src="./objects/marvin.mtl"></a-asset-item> -->
+  </a-assets>
+  <a-entity position="0 1.5 -3">
 
+
+    <a-curve id="track1" curve="closed:true; type:">
+      <a-curve-point id="t" position="0 1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="r" position="-1 0 0" curve-point=""></a-curve-point>
+      <a-curve-point id="b" position="0 -1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="l" position="1 0 0" curve-point=""></a-curve-point>
+    </a-curve>
+
+    <a-curve id="track2" curve="closed:true; type:">
+      <a-curve-point id="t" position="0 -1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="r" position="0 0 -1" curve-point=""></a-curve-point>
+      <a-curve-point id="b" position="0 1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="l" position="0  0 1" curve-point=""></a-curve-point>
+    </a-curve>
+
+    <a-curve id="track3" curve="closed:true; type:">
+      <a-curve-point id="t" position="-1 1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="r" position="0 0 1" curve-point=""></a-curve-point>
+      <a-curve-point id="b" position="1 -1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="l" position="0 0 -1" curve-point=""></a-curve-point>
+    </a-curve>
+
+    <a-curve id="track4" curve="closed:true; type:">
+      <a-curve-point id="t" position="1 1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="r" position="0 0 -1" curve-point=""></a-curve-point>
+      <a-curve-point id="b" position="-1 -1 0" curve-point=""></a-curve-point>
+      <a-curve-point id="l" position="0 0 1" curve-point=""></a-curve-point>
+    </a-curve>
+
+    <a-entity id="name" text="width: 10; value: WebXR NL; color:#000; align: center" position=""></a-entity>
+
+    <a-entity id="boxes" position="1.1 0 0">
+      <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      <!-- <a-obj-model src="#marvin-obj" mtl="#marvin-mtl" scale="0.0001 0.0001 0.0001"></a-obj-model> -->
+      <a-entity id="arBox" geometry="primitive: box; width: 0.25; height: 0.25; depth: 0.25" material="src:#vrLogo" alongpath="curve: #track1; delay:500; dur:5000; loop:true; rotate:true"></a-entity>
+      <a-entity id="vrBox" geometry="primitive: box; width: 0.25; height: 0.25; depth: 0.25" material="src:#arLogo" alongpath="curve: #track2; delay:750; dur:7500; loop:true; rotate:true"></a-entity>
+      <a-entity id="mrBox" geometry="primitive: box; width: 0.25; height: 0.25; depth: 0.25" material="src:#mrLogo" alongpath="curve: #track3; delay:1000; dur:10000; loop:true; rotate:true"></a-entity>
+      <a-entity id="wwwBox" geometry="primitive: box; width: 0.25; height: 0.25; depth: 0.25" material="src:#wwLogo" alongpath="curve: #track4; delay:1250; dur:12500; loop:true; rotate:true"></a-entity>
+    </a-entity>
+  </a-entity>
 </a-scene>
 {{> aframe/footer}}
