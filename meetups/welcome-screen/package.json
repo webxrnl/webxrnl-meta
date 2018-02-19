@@ -1,34 +1,21 @@
 {
-  "name": "webxr-webpack-boilerplate",
-  "version": "0.9.10",
-  "description": "Starter Kit for building rich, immersive WebXR projects (featuring A-Frame) PWA with Webpack and SASS",
-  "author": "Marko Kungla <marko.kungla@gmail.com> (https://github.com/mkungla)",
+  "name": "webxrnl-meetup-welcome-screen",
+  "version": "0.1.0",
+  "description": "Welcome screen for WebXR NL meetups",
+  "author": "https://github.com/orgs/webxrnl/people",
   "main": "src/js/index.js",
-  "license": "MIT",
+  "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mkungla/webxr-webpack-boilerplate.git"
+    "url": "https://github.com/webxrnl/webxrnl-meta.git"
   },
   "bugs": {
-    "url": "https://github.com/mkungla/webxr-webpack-boilerplate/issues"
+    "url": "https://github.com/webxrnl/webxrnl-meta/issues"
   },
-  "homepage": "https://github.com/mkungla/webxr-webpack-boilerplate#readme",
+  "homepage": "com/webxrnl/webxrnl-meta#readme",
   "keywords": [
-    "webxr-boilerplate",
-    "webvr",
-    "webxr",
-    "boilerplate-application",
-    "starter-kit",
-    "aframe",
-    "aframevr",
-    "aframexr",
-    "aframe-vr",
-    "aframe-boilerplate",
-    "webpack",
-    "webpack-boilerplate",
-    "sass",
-    "pwa",
-    "service-workers"
+    "webxrnl",
+    "meetup"
   ],
   "scripts": {
     "build": "cross-env WITH_VENDORS=true NODE_ENV=staging webpack --config ./devel/webpack.build.js",
