@@ -4,10 +4,6 @@
  *    and not included in final bundle of this entry point!
  */
 import '../style/app-theme.scss'
-import '../style/app-theme-blue.scss'
-import '../style/app-theme-green.scss'
-import '../style/app-theme-red.scss'
-import '../style/app-theme-yellow.scss'
 
 const appConfig = require('../app-config')
 

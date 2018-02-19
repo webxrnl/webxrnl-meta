@@ -7,8 +7,7 @@ var CACHE_FILE_LIST = [
   'js/aframe-app.js',
   'js/aframe-base.js',
   'js/app.js',
-  'js/vendors.js',
-  'index.html'
+  'js/vendors.js'
 ]
 
 self.addEventListener('install', function (event) {
