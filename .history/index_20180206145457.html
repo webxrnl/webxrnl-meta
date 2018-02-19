@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>webXRTempLogo</title>
+    <meta name="description" content="webXRTempLogo">
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+   <!-- <script src="js/aframe-animation-component.min.js"></script> -->
+    <script src="https://rawgit.com/protyze/aframe-curve-component/master/dist/aframe-curve-component.min.js"></script> 
+    <script src="https://rawgit.com/protyze/aframe-alongpath-component/master/dist/aframe-alongpath-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous">
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
+      </a-assets>
+<a-entity position="0 1 -6">
+
+    <a-curve id="track1" curve="closed:true; type:"  >
+        <a-curve-point position="4 0 -6" curve-point=""></a-curve-point>
+        <a-curve-point position="0 3 -6" curve-point=""></a-curve-point>
+        <a-curve-point position="-4 0 -6" curve-point=""></a-curve-point>
+        <a-curve-point position="0 -2 -6" curve-point=""></a-curve-point>
+      </a-curve>
+      <a-curve id="track2" curve="closed:true; type:"  >
+        <a-curve-point position="1 0 -2" curve-point=""></a-curve-point>
+        <a-curve-point position="0 4 -6" curve-point=""></a-curve-point>
+        <a-curve-point position="-1 0 -10" curve-point=""></a-curve-point>
+        <a-curve-point position="0 -3 -6" curve-point=""></a-curve-point>
+      </a-curve>
+
+      <a-curve id="track3" curve="closed:true; type:"  >
+        <a-curve-point position="1 0 -2" curve-point=""></a-curve-point>
+        <a-curve-point position="0 4 -6" curve-point=""></a-curve-point>
+        <a-curve-point position="-1 0 -10" curve-point=""></a-curve-point>
+        <a-curve-point position="0 -3 -6" curve-point=""></a-curve-point>
+      </a-curve>
+
+  <a-text id="" value="WebXR NL" geometry="primitive: plane; width: 4; height: 1;" position=""></a-text>
+  <a-entity id="" geometry="primitive: box; width: 1; height: 1; depth: 1" alongpath="curve: #track1; dur:10000; loop:true; rotate:true"></a-entity>
+  <!-- <a-entity id="" geometry="primitive: box; width: 1; height: 1; depth: 1" alongpath="curve: #track2; dur:9000; loop:true; rotate:true"></a-entity> -->
+  <!-- <a-entity id="" geometry="primitive: box; width: 1; height: 1; depth: 1" alongpath="curve: #track3; dur:10000; loop:true; rotate:true"></a-entity> -->
+
+</a-entity>
+
+      <!-- Primitives. -->
+ 
+   
+
+
+    
+      <!-- Draw the Curve -->
+      <a-draw-curve curveref="#track1" material="shader: line; color: blue; "></a-draw-curve>
+      <a-draw-curve curveref="#track2" material="shader: line; color: red; "></a-draw-curve>
+
+      
+      <!-- Clone a Box along the Curve -->
+      <!-- <a-entity clone-along-curve="curve: #track1; spacing: 0.2; scale: 1 1 1; rotation: 0 0 0;" geometry="primitive:box; height:0.1; width:0.2; depth:0.1"></a-entity> -->
+    </a-scene>
+  </body>
+</html>
+  
