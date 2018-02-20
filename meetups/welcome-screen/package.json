@@ -40,7 +40,8 @@
   "dependencies": {
     "aframe": "^0.7.1",
     "aframe-alongpath-component": "^1.0.5",
-    "aframe-curve-component": "^0.1.3"
+    "aframe-curve-component": "^0.1.3",
+    "moment": "^2.20.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

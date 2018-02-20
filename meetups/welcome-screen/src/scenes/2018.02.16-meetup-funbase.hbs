@@ -39,7 +39,7 @@
       <a-curve-point id="l" position="0 0 1" curve-point=""></a-curve-point>
     </a-curve>
 
-    <a-entity id="name" text="width: 10; value: WebXR NL; color:#000; align: center" position=""></a-entity>
+    <a-entity id="name" text="width: 10; value: WebXR NL; color:#000; align: center; side:double" position=""></a-entity>
 
     <a-entity id="boxes" position="1.1 0 0">
       <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
@@ -49,6 +49,8 @@
       <a-entity id="mrBox" geometry="primitive: box; width: 0.25; height: 0.25; depth: 0.25" material="shader: flat; src:#mrLogo" alongpath="curve: #track3; delay:1000; dur:10000; loop:true; rotate:true"></a-entity>
       <a-entity id="wwwBox" geometry="primitive: box; width: 0.25; height: 0.25; depth: 0.25" material="shader: flat; src:#wwLogo" alongpath="curve: #track4; delay:1250; dur:12500; loop:true; rotate:true"></a-entity>
     </a-entity>
+    <a-webxrnl-meetup-timeline
+      when"2018-02-20 18:30"></a-webxrnl-meetup-timeline>
   </a-entity>
 </a-scene>
 {{> aframe/footer}}
