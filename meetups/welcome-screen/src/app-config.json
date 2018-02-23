@@ -1,0 +1,26 @@
+{
+  "project": {
+    "name": "webxrnl-meetup-welcome-screen",
+    "version": "0.1.0",
+    "description": "Welcome screen for WebXR NL meetups",
+    "author": "https://github.com/orgs/webxrnl/people",
+    "license": "CC-BY-4.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/webxrnl/webxrnl-meta.git"
+    },
+    "bugs": {
+      "url": "https://github.com/webxrnl/webxrnl-meta/issues"
+    },
+    "homepage": "com/webxrnl/webxrnl-meta#readme",
+    "keywords": [
+      "webxrnl",
+      "meetup"
+    ]
+  },
+  "app": {
+    "name": "WebXR NL Meetup Welcome Screen",
+    "themecolor": "#ee295f",
+    "mstilecolor": "#24caff"
+  }
+}
