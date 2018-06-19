@@ -4,17 +4,20 @@
 # Files to ignore
 *.sw[mnop]
 .DS_Store
-*.log
+**/*.log
+**/*.sqlite
 npm-debug.log*
 package-lock.json
-
+.env
 ################################################################################
 # DIRECTORIES to ignore
 ################################################################################
+.sass-cache/
 **/[Bb]uild/*
 **/dist/*
 **/[Tt]mp/*
 **/node_modules/*
+.idea/
 
 ################################################################################
 # exception rules

@@ -1,5 +1,0 @@
-{
-  "name": "{{ name }}",
-  "website": "{{ website }}",
-  "twitter": "{{ twitter }}"
-}

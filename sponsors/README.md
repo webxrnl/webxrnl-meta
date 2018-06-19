@@ -1,1 +1,1 @@
-# WebXR NL sponsor materials
+# WebXR NL sponsors over time
